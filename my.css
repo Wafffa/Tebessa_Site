@@ -21,19 +21,14 @@ header {
   z-index: 999;
   width: 100%;
 }
-
-/* changed this from the tutorial video to
-   allow it to gain focus, making it tabbable */
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
-
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px solid rgba(lightblue, .75);
 }
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -129,7 +124,7 @@ nav a:hover {
   }
   
   nav {
-       all: unset;  /*this causes issues with Edge, since it's unsupported */
+    all: unset;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -244,7 +239,7 @@ nav ul ul li:hover{
 /* end of js annimation */
 /* -------------- the Home page section ------------------------ */
 #banner{
-  background: linear-gradient(rgba(255, 255, 255, 0.432),#000c409a),url(homepage1.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.432),#000c409a),url(img/homepage1.jpg);
   background-size: cover;
   height: 100vh;
 }
@@ -704,7 +699,7 @@ nav ul ul li:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(rgba(255, 255, 255, 0.432),var(--background1)),url(contact2.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.432),var(--background1)),url(img/contact2.jpg);
   background-size: cover;
 }
 .contact .contact-content{
